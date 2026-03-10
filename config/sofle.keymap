@@ -17,7 +17,7 @@
                               &kp LEFT_CONTROL  &kp LALT  &mo 1   &mo 2   &kp RET       &kp SPACE                         &mo 3   &mo 4   &kp BACKSPACE  &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         L1 {
@@ -30,7 +30,7 @@
                       &trans     &trans    &trans    &trans     &trans    &trans                            &trans     &trans    &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         layer2 {
@@ -43,7 +43,7 @@
                           &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         layer3 {
@@ -56,7 +56,7 @@
                                   &trans           &trans           &trans           &to 0            &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         layer_4 {
