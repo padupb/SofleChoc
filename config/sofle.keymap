@@ -17,7 +17,9 @@
                               &kp LEFT_CONTROL  &kp LALT  &mo 1   &mo 2   &kp RET       &kp SPACE                         &mo 3   &mo 4   &kp BACKSPACE  &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         L1 {
