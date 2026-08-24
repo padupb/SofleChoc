@@ -9,98 +9,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
                 <&kp LEFT_ALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N5>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
+                <&macro_press>,
+                <&kp KP_PLUS &kp N0 &kp N0 &kp E &kp NUMBER_1>;
 
             label = "U_A_ACUTE";
-        };
-
-        u_e_acute: u_e_acute {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N3>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
-
-            label = "U_E_ACUTE";
-        };
-
-        u_i_acute: u_i_acute {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N7>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
-
-            label = "U_I_ACUTE";
-        };
-
-        u_o_acute: u_o_acute {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N3>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
-
-            label = "U_O_ACUTE";
-        };
-
-        u_u_acute: u_u_acute {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N0>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
-
-            label = "U_U_ACUTE";
-        };
-
-        aspas_simples: aspas_simnples {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N6>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
-
-            label = "ASPAS_SIMNPLES";
-        };
-
-        aspas_dupla: aspas_dupla {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N7>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
-
-            label = "ASPAS_DUPLA";
         };
     };
 
