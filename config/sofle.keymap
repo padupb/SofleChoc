@@ -15,6 +15,50 @@
 
             label = "U_A_ACUTE";
         };
+
+        u_e_acute: u_e_acute {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp KP_PLUS &kp N0 &kp N0 &kp E &kp NUMBER_9>;
+
+            label = "U_E_ACUTE";
+        };
+
+        u_i_acute: u_i_acute {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp KP_PLUS &kp N0 &kp N0 &kp E &kp D>;
+
+            label = "U_I_ACUTE";
+        };
+
+        u_o_acute: u_o_acute {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp KP_PLUS &kp N0 &kp N0 &kp F &kp NUMBER_3>;
+
+            label = "U_O_ACUTE";
+        };
+
+        u_u_acute: u_u_acute {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp KP_PLUS &kp N0 &kp N0 &kp F &kp A>;
+
+            label = "U_U_ACUTE";
+        };
     };
 
     keymap {
