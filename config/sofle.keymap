@@ -124,6 +124,41 @@
 
             label = "ASPAS_SIMPLES";
         };
+
+        passpad1: passpad1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(P) &kp A &kp D &kp U>;
+            label = "PASSPAD1";
+        };
+
+        passpad5: passpad2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp AT_SIGN>;
+            label = "PASSPAD2";
+        };
+
+        passpad2: passpad3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N0 &kp N4 &kp N1 &kp N4>;
+            label = "PASSPAD3";
+        };
+
+        passpad4: passpad4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N2 &kp N7 &kp N3 &kp N0>;
+            label = "PASSPAD4";
+        };
+
+        passpad3: passpad3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N5 &kp N9 &kp N9>;
+            label = "PASSPAD3";
+        };
     };
 
     keymap {
@@ -175,11 +210,11 @@
         layer3 {
             display-name = "ADJUST";
             bindings = <
-&rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI                    &none   &none   &none   &none   &none   &none
-&bootloader      &trans           &trans           &kp UP_ARROW     &trans           &trans                             &trans  &trans  &trans  &trans  &trans  &trans
-&sys_reset       &trans           &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW  &trans                             &trans  &trans  &trans  &trans  &trans  &trans
-&trans           &trans           &trans           &trans           &trans           &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                  &trans           &trans           &trans           &to 0            &trans    &trans  &trans  &trans  &trans  &trans
+&rgb_ug RGB_TOG  &passpad1  &passpad2       &passpad3       &passpad4        &passpad5                    &none   &none   &none   &none   &none   &none
+&bootloader      &trans     &trans          &kp UP_ARROW    &trans           &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+&sys_reset       &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &trans     &trans          &trans          &trans           &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans          &trans          &trans           &to 0      &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
