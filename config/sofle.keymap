@@ -152,6 +152,13 @@
             bindings = <&kp N2 &kp N7 &kp N3 &kp N0>;
             label = "PASSPAD4";
         };
+
+        passpad3: passpad3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N5 &kp N9 &kp N9>;
+            label = "PASSPAD3";
+        };
     };
 
     keymap {
