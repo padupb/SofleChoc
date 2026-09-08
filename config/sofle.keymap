@@ -132,11 +132,11 @@
             label = "PASSPAD1";
         };
 
-        passpad5: passpad2 {
+        passpad5: passpad5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp AT_SIGN>;
-            label = "PASSPAD2";
+            label = "PASSPAD5";
         };
 
         passpad2: passpad2 {
