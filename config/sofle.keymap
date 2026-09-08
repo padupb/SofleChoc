@@ -153,7 +153,7 @@
             label = "PASSPAD4";
         };
 
-        passpad32: passpad3 {
+        passpad32222: passpad3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp N1 &kp N5 &kp N9 &kp N9>;
@@ -193,7 +193,7 @@
         };
 
         layer2 {
-            display-name = "RAISE";
+            display-name = "Arrow";
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                              &none      &none     &none     &none      &none    &none
 &trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                                                    &kp PG_UP  &trans    &kp UP    &trans     &trans   &trans
@@ -208,9 +208,9 @@
         };
 
         layer3 {
-            display-name = "ADJUST";
+            display-name = "Pass";
             bindings = <
-&rgb_ug RGB_TOG  &passpad1  &passpad2       &passpad32      &passpad4        &passpad5                    &none   &none   &none   &none   &none   &none
+&rgb_ug RGB_TOG  &passpad1  &passpad2       &passpad32222   &passpad4        &passpad5                    &none   &none   &none   &none   &none   &none
 &bootloader      &trans     &trans          &kp UP_ARROW    &trans           &trans                       &trans  &trans  &trans  &trans  &trans  &trans
 &sys_reset       &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
 &trans           &trans     &trans          &trans          &trans           &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -228,6 +228,8 @@
 &trans  &trans      &trans  &trans      &trans  &trans  &trans    &trans  &trans  &trans      &trans      &trans      &trans  &trans
                     &trans  &trans      &trans  &trans  &trans    &trans  &trans  &trans      &trans      &trans
             >;
+
+            label = "Acento";
         };
     };
 };
