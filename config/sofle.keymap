@@ -11,7 +11,8 @@
             bindings =
                 <&kp LEFT_ALT>,
                 <&macro_press>,
-                <&kp KP_PLUS &kp N0 &kp N1 &kp N9 &kp N3>;
+                <&kp KP_PLUS &kp N0 &kp N1 &kp N9 &kp N3>,
+                <&macro_release>;
 
             label = "U_A_ACUTE";
         };
