@@ -220,6 +220,13 @@
             timeout-ms = <100>;
             layers = <0>;
         };
+
+        windus {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <51 50>;
+            layers = <0>;
+            timeout-ms = <100>;
+        };
     };
 
     keymap {
