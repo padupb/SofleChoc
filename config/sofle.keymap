@@ -14,7 +14,8 @@
                 <&macro_tap>,
                 <&kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp E &kp KP_N1>,
                 <&macro_release>,
-                <&kp LEFT_ALT>;
+                <&kp LEFT_ALT>,
+                <&macro_release>;
 
             label = "U_A_ACUTE";
         };
