@@ -23,9 +23,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LEFT_ALT>,
                 <&macro_press>,
-                <&kp KP_PLUS &kp N0 &kp N0 &kp E &kp NUMBER_9>;
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N3>,
+                <&macro_press>,
+                <&kp LEFT_ALT>;
 
             label = "U_E_ACUTE";
         };
@@ -34,9 +37,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LEFT_ALT>,
                 <&macro_press>,
-                <&kp KP_PLUS &kp N0 &kp N0 &kp E &kp D>;
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N7>,
+                <&macro_press>,
+                <&kp LEFT_ALT>;
 
             label = "U_I_ACUTE";
         };
@@ -45,9 +51,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LEFT_ALT>,
                 <&macro_press>,
-                <&kp KP_PLUS &kp N0 &kp N0 &kp F &kp NUMBER_3>;
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N3>,
+                <&macro_press>,
+                <&kp LEFT_ALT>;
 
             label = "U_O_ACUTE";
         };
@@ -56,9 +65,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LEFT_ALT>,
                 <&macro_press>,
-                <&kp KP_PLUS &kp N0 &kp N0 &kp F &kp A>;
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N0>,
+                <&macro_press>,
+                <&kp LEFT_ALT>;
 
             label = "U_U_ACUTE";
         };
@@ -102,12 +114,13 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LEFT_ALT>,
                 <&macro_press>,
-                <&kp KP_PLUS &kp N0 &kp N0 &kp N2 &kp N2>,
+                <&kp LEFT_ALT>,
                 <&macro_release>,
-                <&kp KP_PLUS &kp N0 &kp N0 &kp N2 &kp N2>,
+                <&kp KP_N0 &kp KP_N0 &kp KP_N3 &kp KP_N4>,
                 <&macro_tap>,
+                <&kp N2>,
+                <&macro_press>,
                 <&kp LEFT_ARROW>;
 
             label = "ASPAS_DUPLA";
@@ -145,7 +158,7 @@
         passpad2: passpad2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N0 &kp N4 &kp N1 &kp N4>;
+            bindings = <&kp KP_N0 &kp N4 &kp N1 &kp N4>;
             label = "PASSPAD2";
         };
 
