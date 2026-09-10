@@ -192,8 +192,15 @@
         ip_001: ip_001 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp N9 &kp N2 &kp DOT &kp N1 &kp N6 &kp N8 &kp DOT &kp N0 &kp DOT &kp N1>;
+            bindings = <&kp N1 &kp N9 &kp N2 &kp DOT &kp N1 &kp N6 &kp N8 &kp DOT &kp N0 &kp DOT>;
             label = "IP_001";
+        };
+
+        dino: dino {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(F) &kp L &kp A &kp V &kp I &kp O &kp SPACE &kp D &kp I &kp N &kp O &kp SPACE &kp SPACE &kp M &kp U &kp I &kp T &kp O &kp SPACE &kp B &kp U &kp R &kp R &kp O>;
+            label = "DINO";
         };
     };
 
@@ -203,6 +210,13 @@
         ip_001-combo {
             bindings = <&ip_001>;
             key-positions = <20 22 1>;
+            timeout-ms = <100>;
+            layers = <0>;
+        };
+
+        dinoburro {
+            bindings = <&dino>;
+            key-positions = <27 20 44 21>;
             timeout-ms = <100>;
             layers = <0>;
         };
